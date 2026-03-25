@@ -3,7 +3,7 @@
 # Maintainer: Felix Xing <fxing@qnx.com>
 pkgname=libasyncns
 pkgver=0.8
-pkgrel=${pkgrel:-0}
+pkgrel=0
 pkgdesc="Asynchronous Name Service Library"
 url="https://0pointer.de/lennart/projects/libasyncns/"
 arch="all"
@@ -36,7 +36,6 @@ package() {
     make DESTDIR="$pkgdir" install
 }
 
-options="$options ${DISABLE_CHECK:+!check}"
 sha512sums="
 2daad3a2d9eb875e0575843d9e9e2787be6cbba89211fd073fa8898ff80e0a891c7da1a7b0ef70f306318cb3a963ecd65d53d24d08b5f6b98e7cd2a3b3bdcda7  libasyncns-0.8.tar.gz
 "
